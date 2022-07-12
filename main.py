@@ -22,7 +22,8 @@ def password_randomizer():
     while y < numOfChars:
         arr.append(chr(random.randint(33, 47)))
         y += 1
-
+    
+    random.shuffle(arr)
     password = "".join(arr)
     print(password)
 
