@@ -1,7 +1,7 @@
 import os.path
 import random
 
-# Randomize password with 2 uppercase letters, 2 lowercase letters, 3 numbers, 2 special symbols
+# Randomize password with uppercase letters, lowercase letters, numbers, and special symbols
 def password_randomizer():
     arr = []
     i, j, x, y = 0, 0, 0, 0
@@ -22,10 +22,9 @@ def password_randomizer():
     while y < numOfChars:
         arr.append(chr(random.randint(33, 47)))
         y += 1
-    
+
     random.shuffle(arr)
     password = "".join(arr)
-    print(password)
 
     return password
 
